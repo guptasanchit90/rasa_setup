@@ -22,7 +22,7 @@ RUN apt-get update && \
     pip install -r alt_requirements/requirements_full.txt && \
     pip install -e . && \
     pip install rasa_nlu[spacy] && \
-    python3 -m spacy download en_core_web_md && \
-    python3 -m spacy link en_core_web_md en
+    python -m spacy download en_core_web_md && \
+    python -m spacy link en_core_web_md en
 
     EXPOSE 5000
