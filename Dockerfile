@@ -9,8 +9,8 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install python3.6 -y && \
     apt-get install python-pip python-dev build-essential -y && \
-    pip3 install --upgrade pip && \
-    pip3 install --upgrade virtualenv && \
+    pip install --upgrade pip && \
+    pip install --upgrade virtualenv && \
     mkdir rasa && \
     cd rasa && \
     git clone https://github.com/RasaHQ/rasa_core.git && \
