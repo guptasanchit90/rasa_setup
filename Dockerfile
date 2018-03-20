@@ -15,13 +15,13 @@ RUN apt-get update && \
     cd rasa && \
     git clone https://github.com/RasaHQ/rasa_core.git && \
     cd rasa_core && \
-    pip3 install -r requirements.txt && \
-    pip3 install -e . && \
+    pip install -r requirements.txt && \
+    pip install -e . && \
     git clone https://github.com/RasaHQ/rasa_nlu.git && \
     cd rasa_nlu && \
-    pip3 install -r alt_requirements/requirements_full.txt && \
-    pip3 install -e . && \
-    pip3 install rasa_nlu[spacy] && \
+    pip install -r alt_requirements/requirements_full.txt && \
+    pip install -e . && \
+    pip install rasa_nlu[spacy] && \
     python3 -m spacy download en_core_web_md && \
     python3 -m spacy link en_core_web_md en
 
