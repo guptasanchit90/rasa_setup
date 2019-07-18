@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:16.10
 
 MAINTAINER Sanchit Gupta "gupta.sanchit90@gmail.com"
 
